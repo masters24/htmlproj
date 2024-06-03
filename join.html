@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>The Portrait Maker</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="dist/slick.js"></script>
+        <script type="text/javascript" src="dist/pickmeup.min.js"></script>
+        <script type="text/javascript" src="dist/handleCounter.js"></script>
+        <script type="text/javascript" src="dist/jquery.scrollUp.js"></script>
+        <script type="text/javascript" src="dist/demo.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/pickmeup.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/slick.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    </head>    
+    <body >  
+    <header class="tm-header">
+        <img class="tm-logo" src="images/logo1.png" alt="Sketch & Painting">
+           <nav class="tm-nav" >
+               <div>
+                   <ul>
+                       <li ><a href="Home.html">Home</a></li>
+                       <li ><a href="Order.html">Order portrait</a></li>
+                       <li><a href="contact.html">Contact us</a></li>
+                       <li><a href="join.html">Join as artist</a></li>
+                       <button class="button" type="button" autofocus onclick="alert('💝LOG OUT SUCCESSFUL💝')">Log out</button>
+                  </ul> 
+               </div>
+          </nav>
+    </header>
+    <section class="tm-main">
+           <p >💝Releasing your inner creativity💝</p>
+           <p> all you need to do is draw…</p>
+    </section>
+    <section class="tm-booking">
+    <form>
+        <div class="tm-form1">
+            <input type="text" name="name" placeholder="Name">  
+            <input type="email" name="email" placeholder="E-mail"> 
+            <input type="number" name="phone-number" placeholder="Phone number"> 
+            <input type="number" name="alt phone-number" placeholder="Alternative Phone number"> 
+            <textarea  placeholder="Complete Address" rows="4" ></textarea>
+            <p class="join">!!  Type your address in same way as it is in aadhar card.  !!</p>
+            <label for="img">Drop your artwork image here:</label>
+            <input type="file" id="img" name="img" accept="image/*">
+            <input type="file" id="img" name="img" accept="image/*">
+            <input type="file" id="img" name="img" accept="image/*">
+            <p class="join">!!  For quality of your artwork we need 3 image of same artwork from diffrent angle 
+               with your name and phone number written on bottom-right corner.  !!
+            </p>
+            <label >Skilled/Specialist in:</label>
+            <select name="selector" id="selector">
+            <option value="Normal Pencil Sketch">Normal Pencil Sketch</option>
+            <option value="Charcoal Pencil Sketch">Charcoal Pencil Sketch</option>
+            <option value="Water Color Painting">Water Color Painting</option>
+            <option value="Oil Color Painting">Oil Color Painting</option>
+            </select>
+            <label >Type here:</label>
+            <textarea  placeholder="Any unique/creative idea of artwork that you know to draw except 4 mentioned above. for example:coffee painting" rows="4" ></textarea>   
+            <input type="submit" id="sub" value="Proceed">
+        </div>       
+        <div class="vertical-line"> 
+        </div>
+        <div class="tm-form2"> 
+          <p class="bold">will verify you and your artwork and let you know.</p>
+          <img class="tm-sliderimage" src="images/main_care.jpg"> 
+        </div>
+    </form>
+    </section>
+    <footer class="tm-footer">
+        <div class="social">
+          <p class="social">If you like our service, Please share with your friends 🙂</p>        
+          <p class="social">Visit our social media page:📷<a class="bold" href="https://www.instagram.com/_theportraitmaker_/">theportraitmaker </a></p>
+        </div>
+    <!--<a href="#">  <img class="tm-up" src="images/up2.png"> </a>-->
+    </footer>  
+    </body>
+</html>

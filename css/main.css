@@ -1,0 +1,621 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.tm-header{
+    background: #211f17;
+    display: block;
+    padding: 20px;
+    
+}
+
+.tm-logo{
+    align-content: center;
+    display: block;
+    margin: 0 auto;
+    width: 35%;
+}
+
+.tm-nav{
+   max-width: 90%;
+   border: 2px solid #3a382e;
+   display: block;
+   margin: 30px auto 5px auto;
+  
+}
+
+.tm-nav div
+{
+    display: table;
+    padding: 10px;
+    margin: 0px auto;
+}
+
+.tm-nav div ul li{
+    display:inline-block;  
+   
+}
+
+
+.tm-nav div ul li a{
+font-family: 'Algeria';
+    font-size: 2.5vmax;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 25px;   
+}
+.tm-nav div ul li a:hover{
+    
+    color: #ec3c6a;
+}
+.button {
+  border: 10px;
+  color: maroon;
+  padding: 5px 25px;
+  text-align: center;
+  display: inline-block;
+  font-size:1.8vw;
+  font-family:Algeria;
+  margin:1px 3px;
+  cursor:pointer;
+}
+
+.button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+/*header ends here and sections start*/
+
+
+/* slider */
+
+.tm-slider{
+    border: 50px solid;
+    position: relative;
+}
+.tm-sliderimage{
+    width: 100%;
+   display: block; 
+}
+.bold{
+    font-family:cooper;
+    padding-bottom: 5px;
+    font-size: 3.5vw;  
+    font-weight: 900;
+}
+.simple{
+     font-family:elephant;
+    font-size: 2.5vw;  
+}
+
+.tm-slidertext1{
+ position: absolute; 
+   top: 30%;
+bottom: 10%; 
+  left: 3%;     
+    color: navy;
+}
+.tm-slidertext2{
+ position: absolute; 
+   top: 30%; 
+  left: 50%;     
+    color: red;
+}
+.tm-text{ 
+ position: absolute; 
+   top: 160%; 
+  left: 15%;   
+  right: 15%; 
+text-align:center;
+    font-size: 1.5vw;
+    color: green;
+}
+.text{
+    font-family:Lucida Calligraphy;
+}
+
+
+ 
+
+/* room */
+
+
+.tm-rooms:focus {
+    outline: none;
+}
+.tm-rooms a:focus {
+    outline: none;
+}
+
+.tm-rooms{
+    display: block;
+    background: #353535;
+    max-width: 33.33%;
+    width: 33.33%;
+}
+
+
+.tm-rooms img{
+    max-width: 100%;
+    width: 100%;
+}
+
+
+
+.tm-rooms p{
+    font-size: 2.5vw;
+    color: #fff;
+    text-align: center;
+padding: 5%;
+
+  
+}
+
+.tm-rooms a{
+    text-decoration: none;
+}
+
+.tm-rooms a p:hover{
+    color: #ec3c6a;
+
+
+}
+
+.s{
+    padding-bottom: 1%;
+}
+
+.flex{
+    display: flex;
+}
+
+
+/* services */
+
+.tm-service{
+    max-width: 30%;
+    width: 30%;
+    margin: 1.5% 12% 1.5% 10%;  
+}
+
+.tm-servicesection{
+    display: flex;
+}
+
+.tm-serimage{
+    display: inline-block;
+    max-width: 20%;
+    width: 10%;
+    height: auto;
+padding-bottom: 10%;
+
+
+}
+
+.tm-service div{
+    display: inline-block;
+
+    max-width: 75%;
+    padding: 5%;
+}
+
+.tm-service p{
+    font-size: 1.5vmax;
+    
+}
+.tm-service .b{
+    padding-bottom: 2%;
+    font-weight: 700;
+}
+
+/* Make reservation */
+
+.tm-res{
+    background: #cc4151;
+    padding: 2%;
+}
+
+
+.tm-resbutton p{
+    display: table;
+    max-width: 30%;
+    margin: 0 auto;
+    font-size: 2.5vw;
+     padding: 2%;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid #fff;
+   
+}
+.tm-resbutton a{
+     text-decoration: none;
+}
+
+.tm-resbutton p:hover{
+    color: #ec3c6a;
+    background: #fff;
+}
+
+
+
+/* footer */
+
+.tm-footer{
+     background: #211f17;
+    display: block;
+    padding: 20px;
+    position: relative;
+
+}
+.social{
+font-family:Algerian;
+color: gold;
+font-size:3vw;
+width:100%;
+}
+.tm-up
+{
+    position: absolute;
+    top: 100%;
+    right: 3%;
+    width: 3%;
+    height: auto;
+}
+
+
+
+.tm-revcon:focus{
+    outline: none;
+}
+
+
+/* order*/
+
+.tm-main{
+      background: #cc4151;
+ 
+}
+
+.tm-main p{
+font-family:algeria;
+    display: table;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 23;
+    text-align: center;
+    color: navy;
+    font-weight: 700;
+}
+
+
+/* Explore sections */
+
+.tm-exp1, .tm-exp2{
+    background: #353535;
+padding-left: 5%;
+    padding-top: 0%;
+width: 60%;
+}
+
+.tm-exp1::after{
+    content:" ";
+    display: block;
+    clear: both;
+}
+
+.tm-exp2::after{
+    content:" ";
+    display: block;
+    clear: both;
+}
+
+
+.tm-exp1 p{
+    font-family:Algeria;
+    float: right;
+padding-left: 5%;
+    padding-right: 20%;
+    padding-top: 10%;
+padding-bottom: 5%;
+    max-width: 10%;
+    font-size: 2.1vw;
+    color: white;
+}
+
+.tm-exp2 p{
+    float: right;
+    padding-left: 5%;
+    padding-top: 0%;
+    max-width: 20%;
+    font-size: 1vw;
+    color: white;
+}
+
+.tm-exp1 img{
+border: 5px solid black;
+    display: block;
+    float: right;
+    max-width: 60%;
+    width: 50%;
+    height: auto;
+    
+}
+
+.tm-exp2 img{
+border:5px solid black;
+    display: block;
+    float: left;
+    max-width: 60%;
+    width: 50%;
+    height: auto;
+    
+}
+
+
+.tm-expsection::after{
+  content: ".";
+     font-size: xx-small;
+    visibility: hidden;
+}
+
+
+
+/* rooms page */
+
+.tm-roomsection{
+    display: flex;
+}
+
+.tm-room1{
+    max-width: 33.33333%;
+    width: 33.333333%;
+    background: #353535;
+    
+display: inline-block;
+    margin: 0px;
+    position: relative;
+}
+
+.tm-room1 p{
+    font-size: 2.5vw;
+    color: #fff;
+    text-align: center;
+    padding: 5%;
+    z-index: 2;
+    position: relative;
+}
+
+
+.tm-roomimage{
+    max-width: 100%;
+    width: 100%;    
+}
+
+.tm-trans{
+    display: inline-block;
+    position: absolute;
+    top: 78%; /*78*/
+   color: #fff;
+     max-width: 100%;
+    width: 100%;
+    height: 0%; /*0*/
+     background: rgba(53, 53, 53,0.7);
+    opacity: 0; /*0*/
+}
+
+.tm-trans p{
+    font-size: 1.8vw;
+
+}
+.tm-trans div{
+    display: inline-table;
+    width: 40%;
+    max-width: 40%;
+    margin: 2%;
+}
+
+.tm-trans div .bold{
+    color: #ff8d9a;
+
+}
+
+
+.tm-room1:hover .tm-trans{
+ 
+    top:30%;
+   
+    transition: top 1s, opacity 1s, height 1s;
+       opacity: 1;
+     height: 50%;
+    z-index: 1;
+}
+
+
+
+/* order */
+
+.tm-booking
+{
+     background: #353535;
+    position: relative;
+}
+.tm-form1, .tm-form2{
+    padding: 4% 4%;   
+}
+
+ div.vertical-line{
+      width: 1%; 
+      background-color:  #ec3d68; 
+      height: 90%; 
+      position: absolute;
+         top: 1%;
+    left: 50%;
+    }
+.tm-form1{
+    float:left;
+     max-width: 40%;
+    width: 40%;
+}
+.tm-form2{
+    float:right;
+     max-width: 40%;
+    width: 40%;   
+}
+input, select, textarea,
+input::-webkit-input-placeholder {
+    font-size: 1.8vw;
+}
+
+input, select, textarea{
+    color: green;
+font-family:cooper;
+}
+
+input::-webkit-input-placeholder{
+    color: green;
+}
+
+textarea::-webkit-input-placeholder{
+    color: green;
+}
+label{
+font-family:cooper;
+     font-size: 2vw;
+    color:white ;
+    font-weight: 2;
+}
+.tm-booking::after{
+    content:" ";
+    display: block;
+    clear: both;
+}
+input[type=text]:nth-child(1),input[type=email],textarea{
+    display: block;
+    margin: 2%;
+    padding: 1% 1%;
+    width: 100%;
+   
+}
+input[type=number]:nth-child(1),input[type=number],textarea{
+    display: block;
+    margin: 2%;
+    padding: 1% 3%;
+    width: 100%;
+   
+}
+
+textarea {
+    max-width: 100% ;
+    resize: none;
+    
+}
+
+#selector{
+font-family:cooper;
+font-size: 1.8vw;
+    display: inline-block;
+    margin: 2%;
+    padding: 1% 3%;
+    width: 90%;
+}
+
+input[type=submit]{
+    display: block;
+    background: #353535;
+    padding: 1% 3%;
+     color: #fff;
+    border: 10px circle #fff;
+
+ 
+
+}
+
+#sub{
+     margin-left: 70%;
+  
+}
+
+#sub2{
+     margin-left: 5%;
+  
+}
+
+input[type=submit]:hover{
+    color: #ec3d68;
+    border: 1px solid #ec3d68;
+}
+
+input[type=submit]:focus{
+    outline: none;
+}
+.here {
+    display: inline-block;
+    margin-top: 5%;
+    font-size: 2vw;
+    color: #fff;
+    font-weight: 700;
+}
+
+.tm-imgslider{
+    position: relative;
+}
+
+.left, .right{
+    position: absolute;
+    width: 2%;
+    hieght:2%;
+    max-width: 1%;
+    padding-top:20%;
+    padding-bottom: 20%;
+    padding-left: 1%;
+    padding-right: 1%;
+     opacity:100%;
+}
+
+.left:hover, .right:hover{
+     opacity:1;
+    -webkit-transition: opacity .25s ease-in-out .0s;
+    transition: opacity .25s ease-in-out .0s;
+}
+
+.left{
+    top: 1%;
+    left: 1%;
+}
+
+.right{
+    top: 1%;
+    right: 1%;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+.cancel{
+padding:5%;
+font-family:Algeria;
+font-size:3vw;
+color:tomato;
+}
+.join{
+font-family:Algeria;
+font-size:1vw;
+color:tomato;
+}
+#scrollUp {
+  bottom: 100px;
+  right: 40px;
+  padding: 1%;
+  background: #5b7e6a;
+    border : 6px solid;
+  color: black;
+   opacity: 100%;
+    border-radius: 50%;
+    font-size: 2vw;
+        width: 5%;
+        text-align: center;
+}

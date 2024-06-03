@@ -1,0 +1,93 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> The Portrait Maker-CONTACT</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="dist/pickmeup.min.js"></script>
+    <script type="text/javascript" src="dist/handleCounter.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/pickmeup.css">
+    <link rel="stylesheet" type="text/css" href="css/handle-counter.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script type="text/javascript" src="dist/jquery.scrollUp.js"></script>
+     <script type="text/javascript" src="dist/demo.js"></script>    
+    </head>
+<body>
+    <header class="tm-header">
+   <img class="tm-logo" src="images/logo1.png" alt="Sketch & Painting">
+   <nav class="tm-nav">
+       <div>
+            <ul>
+                <li class="tm-list"></li>
+                <li class="tm-list"><a href="orderdetail.html">Order Details</a></li>
+                <li><a href="ArtistDetails.html">Artist Details</a></li> 
+                <li><a href="ContactDetails.html">Contact Details</a></li> 
+                <button class="button" type="button" autofocus onclick="alert('💝LOG OUT SUCCESSFUL💝')">Log out</button>
+            </ul>    
+        </div>
+    </nav>
+    </header>
+<div class="container">
+<h1>Customers quaries and suggestions</h1>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Sl No</th>
+<th>Full Name</th>
+<th>Phone</th>
+<th>Email</th>
+<th>Message</th>
+<th>create_datetime</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<!------connect with databse------>
+<?php
+$c=1;
+
+$con=mysqli_connect('localhost','root','','loginsystem');
+if ($con) {
+	echo "Connection Done";
+}else{
+	echo 'Connection Faild';
+}
+
+/////SELECT QUERY START HERE////////////////
+$sel="SELECT * FROM contact";
+$query=$con->query($sel);
+while ($row=$query->fetch_assoc()) 
+{
+?>
+<tr>
+<td><?php echo $c++;?></td>
+<td><?php echo $row['name'];?></td>
+<td><?php echo $row['phone'];?></td>
+<td><?php echo $row['email'];?></td>
+<td><?php echo $row['Message'];?></td>
+<td><?php echo $row['create_datetime'];?></td>
+<td>
+	<a href="" class="btn btn-success">Edit</a>
+<a href="delete.php?delete=<?php echo $row['id'];?>" class="btn btn-danger">COMPLETED </a>
+</td>
+</tr>
+<?php
+}
+?>
+</tbody>
+</table>
+</div>
+</body>
+</html>
+
